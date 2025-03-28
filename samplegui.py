@@ -1,4 +1,5 @@
 import tkinter as tk
+import tkinter.ttk as tkk
 
 #the foundational element of TKINTER is the window
 #it contains all other elements known as widgets
@@ -45,7 +46,10 @@ entry.pack()
 name = entry.get()
 name
 
+#Getting Multiline User Input With Text Widgets
 
+text = tk.Text()
+text.pack()
 
 #start the GUI event loop using the line below, otherwise the scipt will not display the button
 window.mainloop()
