@@ -1,6 +1,11 @@
 import tkinter as tk
 
+#the foundational element of TKINTER is the window
+#it contains all other elements known as widgets
+
 window = tk.Tk()
+
+# Here are the widgets
 
 #Button
 
@@ -29,6 +34,16 @@ label.pack()
 
 #Getting user inputs with entry Widgets
 
+entry = tk.Entry(
+    fg= 'brown',
+    bg= 'green',
+    width=50
+)
+
+entry.pack()
+
+name = entry.get()
+name
 
 
 
