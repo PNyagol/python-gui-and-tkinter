@@ -51,5 +51,10 @@ name
 text = tk.Text()
 text.pack()
 
+
+#Assigning Widgets to Frames
+
+
+
 #start the GUI event loop using the line below, otherwise the scipt will not display the button
 window.mainloop()
