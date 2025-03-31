@@ -3,6 +3,9 @@ import tkinter as tk
 window = tk.Tk()
 window.title("Address Entry Form")
 
+form_frame = tk.Frame(window, relief="sunken", borderwidth=2, padx=10, pady=10)
+form_frame.grid(row=0, column=0, columnspan=2, padx=10, pady=10)
+
 form_fields =['First Name', 'Last Name', 'Address Line 1', 'Address Line 2', 'City',
              'State/Province', 'Postal Code', 'Country']
 
@@ -10,10 +13,10 @@ entries = []
 
 
 for i, form_field in enumerate(form_fields):
-    label = tk.Label(window, text=f'{form_field}:')
+    label = tk.Label(form_frame, text=f'{form_field}:')
     label.grid(row=i, column=0, padx=10, pady=5, sticky="e")
 
-    entry = tk.Entry(window, width=30)
+    entry = tk.Entry(form_frame, width=30)
     entry.grid(row=i, column=1, padx=10, pady=5,)
     entries.append(entry)
 
